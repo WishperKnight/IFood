@@ -4,9 +4,14 @@ import java.io.Serializable;
 
 public class Category implements Serializable {
     private String title;
-    private String image;
+    private int image;
 
     public Category() {
+    }
+
+    public Category(String title, int image) {
+        this.title=title;
+        this.image=image;
     }
 
     public String getTitle() {
@@ -17,11 +22,11 @@ public class Category implements Serializable {
         this.title = title;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 }

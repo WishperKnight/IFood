@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 15; i++) {
             Category category = new Category();
             category.setTitle("Category " + i);
-            category.setImage("@drawable/logo_rounded_app");
+      //      category.setImage("@drawable/logo_rounded_app");
             categories.add(category);
         }
 

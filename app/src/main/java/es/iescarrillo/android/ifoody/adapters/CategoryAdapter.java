@@ -39,7 +39,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
         Category category = categoryList.get(position);
-        holder.bind(category);
+       // holder.bind(category);
+        holder.imgCategory.setImageResource((category.getImage()));
     }
 
     @Override
@@ -58,11 +59,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
             title = itemView.findViewById(R.id.text_category);
         }
 
-        public void bind(Category category) {
-            int resourceId = context.getResources().getIdentifier(category.getImage(), "drawable", context.getPackageName());
-
-            Picasso.get().load(resourceId).into(imgCategory);
-            title.setText(category.getTitle());
-        }
+//        public void bind(Category category) {
+//            int resourceId = context.getResources().getIdentifier(category.getImage(), "drawable", context.getPackageName());
+//
+//            Picasso.get().load(resourceId).into(imgCategory);
+//            title.setText(category.getTitle());
+//        }
     }
 }
