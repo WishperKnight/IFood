@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         // Evento para sincronizar el estado del botón hamburguesa con el estado del menú lateral
         actionBarDrawerToggle.syncState();
 
-        rvList = findViewById(R.id.rvList);
+        rvList = findViewById(R.id.rv_categories);
         categories = new ArrayList<>();
 
         for (int i = 0; i < 15; i++) {

@@ -3,6 +3,9 @@
     <string name="open_menu">Opening menu</string>
     <string name="close_menu">Closing menu</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tittle_fragment_home">What would you like to order</string>
+    <string name="Find_food_or_restaurant">Find food or restaurant...</string>
     <string name="estimated_arrival">Estimated Arrival</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
