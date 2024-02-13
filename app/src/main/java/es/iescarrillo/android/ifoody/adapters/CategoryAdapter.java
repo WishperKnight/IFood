@@ -35,6 +35,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         return new CategoryViewHolder(view);
     }
 
+    //metodo en el que vamos a modificar las coasas que hemos puesto antes
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
         Category category = categoryList.get(position);
@@ -50,6 +51,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         private ImageView imgCategory;
         private TextView title;
 
+        //definir los componenetes de la vista
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
             imgCategory = itemView.findViewById(R.id.img_category);
